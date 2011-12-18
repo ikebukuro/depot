@@ -11,7 +11,14 @@ en:
       questions: "Questions"
       news:      "News"
       contact:   "Contact"
+      
+      order:     "Order"
+      product:   "Product"
+      user:      "User"
 
+      logout:    "Logout"
+      login:     "Login"
+      
   store:
     index:
       title_html: "Your Pragmatic Catalog"
@@ -22,6 +29,8 @@ en:
       title:    "Your Cart"
       empty:    "Empty cart"
       checkout: "Checkout"
+
+      confirm:  "Are you sure?"
 
   number:
     currency:

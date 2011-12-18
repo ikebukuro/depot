@@ -13,7 +13,7 @@
 			<%= submit_tag 'submit' %>
 			<%= javascript_tag "$('.locale input').hide()" %>
 			<% end %>
-			<%= image_tag("logo.png") %>
+			<%= image_tag("Pragmatic Bookshelf.png",:size=>"200x43") %>
 			<%= @page_title || t('.title') %>
 		</div>
 		<div id="columns">
@@ -27,7 +27,7 @@
 				</div>
 				<ul>
 					<li>
-						<a href="http://ruby02.turu.be/depot"><%= t('.home') %></a>
+						<a href="/depot"><%= t('.home') %></a>
 					</li>
 					<li>
 						<a href="http://www."><%= t('.questions') %></a>
@@ -42,16 +42,19 @@
 				<% if session[:user_id] %>
 				<ul>
 					<li>
-						<%= link_to '注文', orders_path %>
+						<%= link_to t('.order'), orders_path %>
 					</li>
 					<li>
-						<%= link_to '商品', products_path %>
+						<%= link_to t('.product'), products_path %>
 					</li>
 					<li>
-						<%= link_to 'ユーザ', users_path %>
+						<%= link_to t('.user'), users_path %>
 					</li>
 				</ul>
-				<%= button_to 'ログアウト',logout_path,method: :delete %>
+				<%= button_to t('.logout'),logout_path,method: :delete %>
+				<% else %>
+				<%= button_to t('.login'),login_path,method: :new %>
+				<%= link_to "新規ユーザ",{:controller => 'users',:action=>'new'}%>
 				<% end %>
 			</div>
 			<div id="main">

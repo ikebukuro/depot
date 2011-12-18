@@ -1,0 +1,65 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ja:
+  thanks: "ご注文ありがとうございます"
+
+  layouts:
+    application:
+      title:     "実用的な本棚"
+      home:      "ホーム"
+      questions: "Q & A"
+      news:      "ニュース"
+      contact:   "お問い合わせ"
+
+      order:     "注文"
+      product:   "商品"
+      user:      "ユーザ"
+
+      logout:    "ログアウト"
+      login:    "ログイン"
+      
+  store:
+    index:
+      title_html: "あなたの実用な種類"
+      add_html:   "カートに入れる"
+
+  carts:
+    cart:
+      title:    "あなたのカート"
+      empty:    "カートを空に"
+      checkout: "チェックアウト"
+
+      confirm:  "本当ですか？"
+
+  number:
+    currency:
+      format:
+        unit:      "¥"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format:    "%u%n"
+
+  orders:
+    new:
+      legend:          "自分の詳細情報を入力してください"
+    form:
+      name:            "名前"
+      address_html:    "アドレス"
+      email:           "メールアドレス"
+      pay_type:        "支払方法"
+      pay_prompt_html: "お支払方法を選択する"
+      submit:          "注文する"
+
+  activerecord:
+    errors:
+      messages:
+        inclusion: "エラーinclusion"
+        black:     "エラーblack"
+  errors:
+    template:
+      body:        "エラーが発生しました:"
+      header:
+        one:       "一つエラーが発生しました"
+        other:     "%{count} エラーが発生しました"

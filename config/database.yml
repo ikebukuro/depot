@@ -14,8 +14,9 @@ development:
   reconnect: false
   database: depot_development
   pool: 5
-  username: root
-  password: "c2madmin1102"
+  host: "36.55.226.177"
+  username: "infodb"
+  password: "info2world"
   socket: /var/lib/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -27,8 +28,9 @@ test:
   reconnect: false
   database: depot_test
   pool: 5
-  username: root
-  password: "c2madmin1102"
+  host: "36.55.226.177"
+  username: "infodb"
+  password: "info2world"
   socket: /var/lib/mysql/mysql.sock
 
 production:
@@ -37,6 +39,7 @@ production:
   reconnect: false
   database: depot_production
   pool: 5
-  username: root
-  password: "c2madmin1102"
+  host: "36.55.226.177"
+  username: "infodb"
+  password: "info2world"
   socket: /var/lib/mysql/mysql.sock
